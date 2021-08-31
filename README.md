@@ -4,7 +4,7 @@
 #### By **Eudes Charles**
 
 ## Description
-- This is a webapp created by eudes that allows you to check for the lattest pitchs as it happens.
+-  this is a personal gallery application that you display your photos for others to see this  webapp was created by eudes.
 
 ## Further help
 
