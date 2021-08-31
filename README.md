@@ -13,7 +13,8 @@ To get more help on python please visit https://www.python.org/.
 ### Behaviour Driven Development
 | Our Program should handle                       | Input example | Output example                                   |
 |:------------------------------------------------|---------------|--------------------------------------------------|
-|able to authenticate the forms | forms  | app is able to create users .|
+|click | images  | View photos based on the location they were taken .|
+|click | images  | Search for different categories of photos .|
 
 ## Known Bugs
 Want to contribute? Great!
