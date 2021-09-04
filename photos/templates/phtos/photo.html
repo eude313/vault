@@ -6,8 +6,13 @@
 
 
 <div class="container">
-    <div>
-        <a href="{% url 'gallery' %}"class="fas fa-arrow-circle-left my-3" style="color:black;"> Return</a>
+    <div class="d-flex"  style="justify-content:space-between">
+        <div>
+            <a href="{% url 'gallery' %}"class="fas fa-arrow-circle-left my-3" style=" font-size:1.5rem; color:black;"> Return</a>
+        </div>
+        <div>
+            <p class="m-1 text-white" style=" font-family: 'Playball', cursive; font-size:1.8rem;"> <i class="fas fa-award pt-1" style="text-shadow: 2px 2px 2px black; font-size:1.5rem; color: gold;"></i> <span style="color: rgb(0, 0, 0);"> Bazenga Vault</span> <i style="font-size:1.5rem; color: gold;text-shadow: 2px 2px 2px black;" class="fas fa-smile-wink"></i></p>
+        </div>
     </div>
     <div class="row justify-content-center">
         <div class="col d-flex">
@@ -16,8 +21,8 @@
                 " class="card" src="{% static '/images/adrian-ra-8w8Yj9K_ETA-unsplash.jpg' %}" alt="">
             </div>
             <div class="ps-5" style="padding-top:60vh;">
-                <h3 class="text-muted">Description:</h3>
-                <p class="text-muted">
+                <h3 class="text-muted" style="font-family: 'Merienda', cursive;">Description:</h3>
+                <p class="text-muted"  style="font-family: 'Playball', cursive;">
                     "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
                 </p>
             </div>
