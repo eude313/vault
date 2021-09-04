@@ -33,3 +33,11 @@ body {
 .fa-ellipsis-h{
     color: rgba(0, 0, 0, 0.555);
 }
+.pho{
+    height: 90vh;
+    border: 1px solid;
+}
+.gUZ{
+    height: 3vh;
+    width: 3vh;
+}

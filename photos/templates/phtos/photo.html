@@ -4,4 +4,20 @@
 
 {% block content %}
 
+
+<div class="container">
+    <div>
+        <a href="{% url 'gallery' %}"class="fas fa-arrow-circle-left my-3" style="color:black;"> Return</a>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="pho">
+                <img style="max-width:100%; max-height:100%;
+                " src="{% static '/images/adrian-ra-8w8Yj9K_ETA-unsplash.jpg' %}" alt="">
+                <p class="text-muted"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
