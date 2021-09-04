@@ -3,20 +3,77 @@
 {% load static %}
 
 {% block content %}
-<div class="card bg-dark text-white">
-  <img
-    src="https://mdbootstrap.com/img/new/slides/017.jpg"
-    class="card-img"
-    alt="..."
-  />
-  <div class="card-img-overlay">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">
-      This is a wider card with supporting text below as a natural lead-in to additional
-      content. This content is a little bit longer.
-    </p>
-    <p class="card-text">Last updated 3 mins ago</p>
-  </div>
-</div>
 
+<nav class="navbar navbar-expand-lg navbar-light">
+  
+  <!-- Container wrapper -->
+    <div class="container-fluid">
+    <p class="m-1 text-white" style="font-family: 'Playball', cursive; font-size:1.8rem;"> <i class="fas fa-award pt-1" style="font-size:1.5rem; color: gold;"></i> Bazenga Vault <i style="font-size:1.5rem; color: gold;" class="fas fa-smile-wink"></i></p>
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarRightAlignExample"
+        aria-controls="navbarRightAlignExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"  style="font-family: 'Merienda', cursive;" >
+          <li class="nav-item Home">
+            <a style="text-shadow: 2px 2px 2px black; color: white; " class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+                <a style="margin-left:1rem; text-shadow: 2px 2px 2px black; color: white;" class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+
+<body class="back">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+
+
+
+            </div>
+            <div class="col-md-8" style="padding-left: 3rem; padding-top: 12rem;">
+                <div class="row p-1">
+                    <div class="box" >
+                        <img class="box img-fluid shadow-4-strong" src="{% static '/images/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg' %}" alt="Paris">
+                        <div class="overlay p-1">
+                        <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:1.8vh;">MOMBASA COAST</h1>
+                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="box img-fluid shadow-4-strong" src="{% static '/images/deepak-nautiyal-lWUYwB0E9co-unsplash.jpg' %}" alt="Paris">
+                        <div class="overlay p-1">
+                            <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:2vh;">THE <br> TIGER</h1>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <img class="box img-fluid shadow-4-strong" src="{% static '/images/paul-volkmer-JJsJTO3KaII-unsplash.jpg' %}" alt="Paris">
+                        <div class="overlay p-1">
+                            <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:2vh;">YELLOW <br> STONE</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 {% endblock %}
