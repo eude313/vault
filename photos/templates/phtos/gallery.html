@@ -5,23 +5,83 @@
 
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col-md">
+    <div class="row my-3">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-4 py-1">
+                    <img
+                    src="{% static '/images/adrian-ra-8w8Yj9K_ETA-unsplash.jpg' %}"
+                    class="card-img"
+                    alt="..."
+                    />
+                    <div class="d-flex">
+                        <small class="ps-1">Category: Pets</small>
+                        <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px; "></i>
+                    </div>
+                    <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
+                </div>
+                <div class="col-md-4 py-1">
+                    <img
+                    src="{% static '/images/leonie-zettl-dP_LhIMtJN4-unsplash.jpg' %}"
+                    class="card-img"
+                    alt="..."
+                    />
+                    <div class="d-flex">
+                        <small  class="ps-1">Category: Pets</small>
+                        <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px;"></i>
+                    </div>
+                    <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
+                </div>
+                <div class="col-md-4 py-1">
+                    <img
+                    src="{% static '/images/adrian-ra-8w8Yj9K_ETA-unsplash.jpg' %}"
+                    class="card-img"
+                    alt="..."
+                    />
+                    <div>
+                        <div class="d-flex">
+                            <small  class="ps-1">Category: Pets</small>
+                            <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px;"></i>
+                        </div>
+                        <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
+                    </div>
+                </div>
+                <div class="col-md-4 py-1">
+                    <img
+                    src="{% static '/images/leonie-zettl-dP_LhIMtJN4-unsplash.jpg' %}"
+                    class="card-img"
+                    alt="..."
+                    />
+                    <div>
+                        <div class="d-flex">
+                            <small  class="ps-1">Category: Pets</small>
+                            <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px;"></i>
+                        </div>
+                        <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
+                    </div>
+                </div>
 
 
+            </div>
         </div>
-        <div class="col-md">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">Featured</div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem; font-family: 'Playball', cursive;">
+                <div class="card-header">All</div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Cras justo odio</li>
                   <li class="list-group-item">Dapibus ac facilisis in</li>
                   <li class="list-group-item">Vestibulum at eros</li>
                 </ul>
             </div>
-            
+            <svg class="gUZ pBj U9O kVc" height="20" width="20" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M22 10h-8V2a2 2 0 0 0-4 0v8H2a2 2 0 0 0 0 4h8v8a2 2 0 0 0 4 0v-8h8a2 2 0 0 0 0-4"></path></svg>
         </div>
     </div>
 </div>
 
 {% endblock %}
+
+
+
+
+
+

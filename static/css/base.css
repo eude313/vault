@@ -24,8 +24,12 @@ body {
     height: 14rem;
     border-radius: 7px;
 }
+
 .overlay{
     position: relative;
     top: -6.9rem;
     height: 1rem;
+}
+.fa-ellipsis-h{
+    color: rgba(0, 0, 0, 0.555);
 }
