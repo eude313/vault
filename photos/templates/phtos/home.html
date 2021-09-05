@@ -30,7 +30,7 @@
             <a style="text-shadow: 2px 2px 2px black; color: white; " class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item">
-                <a style="margin-left:1rem; text-shadow: 2px 2px 2px black; color: white;" class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            <a style="margin-left:1rem; text-shadow: 2px 2px 2px black; color: white;" class="nav-link" href="{% url 'gallery' %}">Gallery</a>
             
           </li>
         </ul>
@@ -42,42 +42,61 @@
 </nav>
 
 <body class="back">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 text-white">
-              <div class="m-2 ps-2" style="padding-top: 3.5rem;text-shadow: 2px 2px 2px black;">
-                <small style="font-family: 'Great Vibes', cursive;"> <i class="fas fa-link pe-1"></i>App's by carbon<i class="fas fa-link ps-1"></i></small>
-                <h1 class="text-white" style="font-family: 'Merienda', cursive;">WELCOME TO BAZENGA VAULT</i></h1>
-                <small style="font-family: 'Great Vibes', cursive;"><i class="fas fa-link pe-1"></i>powered by carbon<i class="fas fa-link ps-1"></i></small>
-                <p style="font-family: 'Merienda', cursive;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna cursus. Id diam maecenas ultricies mi eget mauris. Urna et pharetra pharetra massa massa ultricies mi quis. Netus et malesuada fames ac.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 text-white">
+        <div class="m-2 ps-2" style="padding-top: 3rem;text-shadow: 2px 2px 2px black;">
+          <small style="font-family: 'Great Vibes', cursive;"> <i class="fas fa-link pe-1"></i>App's by carbon<i class="fas fa-link ps-1"></i></small>
+          <h1 class="text-white" style="font-family: 'Merienda', cursive;">WELCOME TO BAZENGA VAULT</i></h1>
+          <small style="font-family: 'Great Vibes', cursive;"><i class="fas fa-link pe-1"></i>powered by carbon<i class="fas fa-link ps-1"></i></small>
+          <p style="font-family: 'Merienda', cursive;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna cursus. Id diam maecenas ultricies mi eget mauris. Urna et pharetra pharetra massa massa ultricies mi quis. Netus et malesuada fames ac.</p>
+          <a href="{% url 'gallery' %}">  <button
+              type="button" style="font-family: 'Merienda', cursive;"
+              class="btn btn-outline-warning btn-rounded"
+              data-mdb-ripple-color="dark"
+            >
+              View Gallery
+            </button>
+          </a>
 
-              </div>
-            </div>
-            <div class="col-md-8" style="padding-left: 3rem; padding-top: 12rem;">
-                <div class="row p-1">
-                    <div class="box" >
-                        <img class="box img-fluid shadow-4-strong" src="{% static '/images/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg' %}" alt="Paris">
-                        <div class="overlay p-1">
-                        <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:1.8vh;">MOMBASA COAST</h1>
-                            
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="box img-fluid shadow-4-strong" src="{% static '/images/deepak-nautiyal-lWUYwB0E9co-unsplash.jpg' %}" alt="Paris">
-                        <div class="overlay p-1">
-                            <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:2vh;">THE <br> TIGER</h1>
-                        </div>
-
-                    </div>
-                    <div class="box">
-                        <img class="box img-fluid shadow-4-strong" src="{% static '/images/paul-volkmer-JJsJTO3KaII-unsplash.jpg' %}" alt="Paris">
-                        <div class="overlay p-1">
-                            <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:2vh;">YELLOW <br> STONE</h1>
-                        </div>
-                    </div>
-                </div>
+        </div>
+      </div>
+      <div class="col-md-8" style="padding-left: 3rem; padding-top: 12rem;">
+        <div class="row p-1">
+          <div class="box" >
+            <img class="box img-fluid shadow-4-strong" src="{% static '/images/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg' %}" alt="Paris">
+            <div class="overlay p-1">
+            <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:1.8vh;">MOMBASA COAST</h1>
+                
             </div>
         </div>
+        <div class="box">
+              <img class="box img-fluid shadow-4-strong" src="{% static '/images/deepak-nautiyal-lWUYwB0E9co-unsplash.jpg' %}" alt="Paris">
+              <div class="overlay p-1">
+                  <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:2vh;">THE <br> TIGER</h1>
+              </div>
+
+        </div>
+        <div class="box">
+              <img class="box img-fluid shadow-4-strong" src="{% static '/images/paul-volkmer-JJsJTO3KaII-unsplash.jpg' %}" alt="Paris">
+              <div class="overlay p-1">
+                  <h1 class="text-white" style="font-family: 'Merienda', cursive; font-size:3vw; padding-top:2vh;">YELLOW <br> STONE</h1>
+              </div>
+          </div>
+        </div>
+        <div class="example d-flex"> 
+          <div class="vl"></div>
+          <div><img src="https://img.icons8.com/color/48/000000/instagram-new.png" width="20px"/>
+          </div>
+          <div><img src="https://img.icons8.com/fluency/48/000000/facebook-circled.png" width="20px"/>
+          </div>
+          <div><img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" width="20px"/>
+          </div>
+          <div class="vl"></div>
+        </div>
+
+      </div>
     </div>
+  </div>
 </body>
 {% endblock %}
