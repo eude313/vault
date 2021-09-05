@@ -14,5 +14,5 @@ virtual:
 
 update:
 	git add .
-	git commit -m"add initial commit"
+	git commit -m"add initial change"
 	git push
