@@ -33,10 +33,10 @@
                 <a href="{% url 'home' %}"class="fas fa-arrow-circle-left my-3" style=" font-size:1.5rem; color:black;"> Go to homepage</a>
             </div>
             <div class="card" style="width: 18rem; font-family: 'Playball', cursive;">
-                <div class="card-header">All</div>
                 <ul class="list-group list-group-flush">
+                    <a href="{% url 'gallery' %}"><li class="list-group-item" style="font-family: 'Merienda', cursive;">All</li></a>
                     {% for category in categories %}
-                        <li class="list-group-item" style="font-family: 'Merienda', cursive;">{{ category.name }}</li>
+                        <a href="{% url 'gallery' %}?category={{category.name}}"><li class="list-group-item" style="font-family: 'Merienda', cursive;"> {{ category.name }}</li></a>
                     {% endfor %}
                     
                         <div class="dropdown">
