@@ -41,8 +41,16 @@ body {
     width: 3vh;
 }
 .vl{
-    /* border: 3px solid rgb(248, 245, 245); */
     background-color: #ebeff5;
     height: 2px;
-    width: 50vw;
+    width: 10rem;
+    position: relative;
+    top: 35px;
+    left: 8rem;
+}
+.png{
+    display: flex;
+    position: relative;
+    top: 18px;
+    left: 8rem;
 }
