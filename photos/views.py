@@ -7,9 +7,9 @@ def home(request):
 def gallery(request):
     category=request.GET.get('category')
     if category == None:
-        categories = Category.objects.all()
+        photo = Photo.objects.all()
     else:
-        categories = Category.objects.filter()
+        photo = Photo.objects.filter(category__name__contains=category)
     
     categories = Category.objects.all()
     if request.method == 'POST':
