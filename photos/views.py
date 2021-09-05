@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect 
 from .models import Category, Photo
 # Create your views here.
 def home(request):
@@ -17,18 +17,15 @@ def gallery(request):
         else:
             category = None  
             
-    photo = Photo.objects.create(
-        category=category,
-        description = data['description'],
-        image=image,
-    )        
-            
+        photo = Photo.objects.create(
+            category=category,
+            description = data['description'],
+            image=image,
+        ) 
+        return redirect('gallery')   
     photo = Photo.objects.all()
     context = {'categories': categories, 'photos': photo }
     return render(request, 'phtos/gallery.html', context )
-
-def addImage(request):
-    return render(request, 'phtos/add.html' )
 
 def viewImage(request, pk):
     photos = Photo.objects.get(id=pk)
