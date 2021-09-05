@@ -5,6 +5,12 @@ def home(request):
     return render(request, 'phtos/home.html' )
 
 def gallery(request):
+    category=request.GET.get('category')
+    if category == None:
+        categories = Category.objects.all()
+    else:
+        categories = Category.objects.filter()
+    
     categories = Category.objects.all()
     if request.method == 'POST':
         data = request.POST
