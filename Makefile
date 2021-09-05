@@ -11,3 +11,8 @@ migrate:
 
 virtual:
 	source virtual/bin/activate
+
+update:
+	git add .
+	git commit -m"add initial commit"
+	git push
