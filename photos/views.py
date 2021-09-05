@@ -9,7 +9,7 @@ def gallery(request):
     if category == None:
         photo = Photo.objects.all()
     else:
-        photo = Photo.objects.filter(category__name__contains=category)
+        photo = Photo.objects.filter(category__name=category)
     
     categories = Category.objects.all()
     if request.method == 'POST':
@@ -28,8 +28,7 @@ def gallery(request):
             description = data['description'],
             image=image,
         ) 
-        return redirect('gallery')   
-    photo = Photo.objects.all()
+        return redirect('gallery') 
     context = {'categories': categories, 'photos': photo }
     return render(request, 'phtos/gallery.html', context )
 
