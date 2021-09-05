@@ -6,7 +6,8 @@ def home(request):
 
 def gallery(request):
     categories = Category.objects.all()
-    context = {'categories': categories}
+    photos = Photo.objects.all()
+    context = {'categories': categories, 'photos': photos}
     return render(request, 'phtos/gallery.html', context )
 
 def addImage(request):

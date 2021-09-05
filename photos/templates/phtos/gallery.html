@@ -7,61 +7,24 @@
 <div class="container">
     <div class="row my-3">
         <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-4 py-1">
-                    <img
-                    src="{% static '/images/adrian-ra-8w8Yj9K_ETA-unsplash.jpg' %}"
-                    class="card-img"
-                    alt="..."
-                    />
-                    <div class="d-flex">
-                        <small class="ps-1">Category: Pets</small>
-                        <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px; "></i>
-                    </div>
-                    <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
-                </div>
-                <div class="col-md-4 py-1">
-                    <img
-                    src="{% static '/images/leonie-zettl-dP_LhIMtJN4-unsplash.jpg' %}"
-                    class="card-img"
-                    alt="..."
-                    />
-                    <div class="d-flex">
-                        <small  class="ps-1">Category: Pets</small>
-                        <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px;"></i>
-                    </div>
-                    <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
-                </div>
-                <div class="col-md-4 py-1">
-                    <img
-                    src="{% static '/images/adrian-ra-8w8Yj9K_ETA-unsplash.jpg' %}"
-                    class="card-img"
-                    alt="..."
-                    />
-                    <div>
+            {% for photo in photos %}
+                <div class="row">
+                    <div class="col-md-4 py-1">
+                        <img
+                        src="{{ photo.image.url }}"
+                        class="card-img"
+                        alt="..."
+                        />
                         <div class="d-flex">
-                            <small  class="ps-1">Category: Pets</small>
-                            <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px;"></i>
+                            <small class="ps-1">Category: Pets</small>
+                            <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px; "></i>
                         </div>
                         <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
                     </div>
                 </div>
-                <div class="col-md-4 py-1">
-                    <img
-                    src="{% static '/images/leonie-zettl-dP_LhIMtJN4-unsplash.jpg' %}"
-                    class="card-img"
-                    alt="..."
-                    />
-                    <div>
-                        <div class="d-flex">
-                            <small  class="ps-1">Category: Pets</small>
-                            <i class="fas fa-ellipsis-h" style="margin-left:6rem; padding-top:3px;"></i>
-                        </div>
-                        <a  href="{% url 'photo' 2 %}"class="btn btn-outline-dark" style="width:100%;" type="button">view image</a>
-                    </div>
-                </div>
-
-            </div>
+            {% empty %}
+                <h3 class="text-muted" > No photos found </h3>    
+            {% endfor %}
         </div>
         <div class="col-md-4">
             <div>
