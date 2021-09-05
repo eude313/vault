@@ -14,4 +14,5 @@ def addImage(request):
     return render(request, 'phtos/add.html' )
 
 def viewImage(request, pk):
-    return render(request, 'phtos/photo.html' )
+    photos = Photo.objects.get(id=pk)
+    return render(request, 'phtos/photo.html', {'photo': photos})
