@@ -14,7 +14,7 @@ def gallery(request):
     categories = Category.objects.all()
     if request.method == 'POST':
         data = request.POST
-        image = request.FILES.get('image')
+        image = request.FILES['image']
         
         if data['category'] != 'none':
             category = Category.objects.get(id=data['category'])
@@ -34,4 +34,7 @@ def gallery(request):
 
 def viewImage(request, pk):
     photos = Photo.objects.get(id=pk)
+    if request.method == 'POST':
+        photos.delete()
+        return redirect('gallery')
     return render(request, 'phtos/photo.html', {'photo': photos})
